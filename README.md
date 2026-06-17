@@ -43,7 +43,6 @@ docs/
     _category_.json
     introduction.md
     cancellation.md
-    messenger-fees.md
     sdk.md
     bot/
       _category_.json
