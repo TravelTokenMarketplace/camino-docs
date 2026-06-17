@@ -1,8 +1,4 @@
 {
   "label": "Camino Messenger",
-  "position": 1,
-  "link": {
-    "type": "doc",
-    "id": "camino-messenger/introduction"
-  }
+  "position": 1
 }
