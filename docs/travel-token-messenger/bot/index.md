@@ -1,10 +1,10 @@
 ---
 sidebar_position: 10
-title: Camino Messenger Bot
-description: Camino Messenger Bot
+title: Travel Token Messenger Bot
+description: Travel Token Messenger Bot
 ---
 
-# Camino Messenger Bot
+# Travel Token Messenger Bot
 
 :::info DRAFT DOCUMENTATION NOTICE
 
@@ -22,16 +22,16 @@ Users should proceed with caution.
 
 :::
 
-## What is Camino Messenger Bot?
+## What is Travel Token Messenger Bot?
 
-The Camino Messenger Bot (CMB) is an application that enhances the
+The Travel Token Messenger Bot (TTMB) is an application that enhances the
 functionality for distributors and service providers by enabling the seamless
-integration of their existing systems with Camino Messenger.
+integration of their existing systems with Travel Token Messenger.
 
-Source code repository: [https://github.com/chain4travel/camino-messenger-bot](https://github.com/TravelTokenMarketplace/travel-token-messenger-bot)
+Source code repository: [https://github.com/TravelTokenMarketplace/camino-messenger-bot](https://github.com/TravelTokenMarketplace/camino-messenger-bot)
 
 **Quick Start:**
 
-- [Installation](/docs/camino-messenger/bot/installation)
-- [Configuration & Running](/docs/camino-messenger/bot/configuration)
-- [Partner Plugin](/docs/camino-messenger/bot/partner-plugin)
+- [Installation](/docs/travel-token-messenger/bot/installation)
+- [Configuration & Running](/docs/travel-token-messenger/bot/configuration)
+- [Partner Plugin](/docs/travel-token-messenger/bot/partner-plugin)
