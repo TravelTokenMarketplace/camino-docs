@@ -1,17 +1,36 @@
 ---
 sidebar_position: 4
 title: Creating a Wallet for the Bot
-description: How to create a wallet for use with the Camino Messenger Bot
+description: How to create a wallet for use with the Travel Token Account and Messenger Bot
 ---
 
-# Creating a Wallet for the Bot
+# Creating a Wallet
 
-Navigate to [Camino Wallet](https://suite.camino.network/wallet/home)
-and create a wallet for use with your bot deployment. Once you have logged
-into your wallet, proceed to the "Manage Keys" tab. Here, click on "View
-Static Key" next to your key listed under the "My Keys" section.
+Wallets need to be created for your TTM Account and for each bot you run. Some wallet suggestions:
 
-![](/img/messenger/static_priv_key_masked.webp)
+### Metamask
+The obvious choice is to use a Metamask wallet. However there is an annoying bug in matrix_messenger
+adding tokens on Base Sepolia (testnet), Base mainnet is working fine. After adding a token on MM for
+Base Sepolia, it does not show the token in the "token enable list". Go here: 
+https://base-sepolia.blockscout.com/address/0x.... (your wallet address)
+Click the MM icon next to the contract address, it will popup a "add token" menu in MM. Accept it and
+it will show up.
 
-Enter this private key, the one above the blue warning, into the configuration file
-for your bot.
+### Rabby Wallet
+Rabby Wallet auto-detects chains (no manual RPC config needed for most networks), has notably better
+token balance detection than MetaMask, and shows pre-transaction simulation so you can see exactly what
+a contract call will do before signing. It's built by DeBank, originally aimed at multi-chain DeFi users,
+so token/balance handling was a priority from day one. Good fit given you're juggling EURe and AccountManager
+contract interactions.
+
+### Coinbase Wallet
+Worth considering specifically because Base is a Coinbase L2, so first-party support tends to be solid
+(faster to pick up new tokens, official Base Sepolia faucet integration in some flows). If you ever want a
+fallback "reference implementation" for how balances should look, this is it.
+
+### Frame
+Desktop-native (not a browser extension), good if you want wallet operations decoupled from the browser
+entirely, with solid multi-chain RPC handling. More of a power-user choice.
+
+### Rainbow Wallet
+Decent token detection, simpler UI, less battle-tested for contract-heavy testnet work than Rabby.

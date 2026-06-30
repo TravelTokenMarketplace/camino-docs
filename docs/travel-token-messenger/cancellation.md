@@ -43,7 +43,7 @@ in the CM Account.
 Imagine a partner would not implement cancellation and allow cancellation via an
 extranet, email or telephone call, this would violate the single point of truth
 function of the blockchain ledger. Conclusively, cancellation of bookings minted
-on Camino and cancelled via other means, while leaving the minted booking active
+on-chain and cancelled via other means, while leaving the minted booking active
 on the blockchain is strongly discouraged.
 
 :::

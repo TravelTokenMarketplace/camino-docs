@@ -16,6 +16,7 @@ change.
 
 :::
 
+__ToDo: update image after bot renaming has finished__
 :::caution USE STABLE VERSION
 
 When using our [GitHub repository](https://github.com/TravelTokenMarketplace/travel-token-messenger-bot),
@@ -25,7 +26,7 @@ To prevent potential issues, always switch to the latest **stable version** by s
 
 <figure>
 
-![This image displays the Camino Messenger bot repo tags](/img/messenger/tags.png)
+![This image displays the TT Messenger bot repo tags](/img/messenger/tags.png)
 
 </figure>
 
@@ -33,7 +34,7 @@ To prevent potential issues, always switch to the latest **stable version** by s
 
 ## Introduction
 
-This document guides you through the installation of the Camino Messenger Bot
+This document guides you through the installation of the Travel token Messenger Bot
 using two distinct methods. The first method involves [compiling the
 software](#compiling-from-source) from its source code, while the second
 method [utilizes Docker](#building-docker-image) to create an image and run a
@@ -54,12 +55,12 @@ sudo snap install go --classic
 
 ### Get the Source
 
-To get started, clone the Camino Messenger Bot repository and initialize the
+To get started, clone the Travel Token Messenger Bot repository and initialize the
 submodules:
 
 ```sh
 git clone -b c4t https://github.com/TravelTokenMarketplace/travel-token-messenger-bot.git
-cd camino-messenger-bot
+cd travel-token-messenger-bot
 # Checkout a specific tag: replace <tag> with the desired version (e.g., v11.0.0)
 git checkout <tag>
 git submodule update --init
@@ -85,20 +86,20 @@ This will create a compiled binary under the `build` directory.
 
 ### Verify
 
-To ensure the build was successful, check for the `camino-messenger-bot` binary:
+To ensure the build was successful, check for the `travel-token-messenger-bot` binary:
 
 ```
-./build/camino-messenger-bot --help
+./build/travel-token-messenger-bot --help
 ```
 
-Running `camino-messenger-bot --help` should produce the following output:
+Running `travel-token-messenger-bot --help` should produce the following output:
 
 ```
-$ ./build/camino-messenger-bot --help
-starts camino messenger bot
+$ ./build/travel-token-messenger-bot --help
+starts travel token messenger bot
 
 Usage:
-  camino-messenger-bot [flags]
+  travel-token-messenger-bot [flags]
 
 Flags:
       --booking_token_address string                BookingToken address. (default "0xe55E387F5474a012D1b048155E25ea78C7DBfBBC")
@@ -137,8 +138,8 @@ Flags:
 You can also check and verify the version as:
 
 ```
-$ ./build/camino-messenger-bot --version
-camino-messenger-bot version v11.0.0 (git: 8555570)
+$ ./build/travel-token-messenger-bot --version
+travel-token-messenger-bot version v11.0.0 (git: 8555570)
 
 libs:
   buf.build protocolbuffers : v1.36.5-20250307104026-ffe2c3741a33.1 (release-11)
@@ -162,7 +163,7 @@ the future, but for now, it is provided here for reference.
 To pull the latest released version:
 
 ```sh
-docker pull c4tplatform/camino-messenger-bot:latest
+docker pull c4tplatform/travel-token-messenger-bot:latest
 ```
 
 To pull a specific version, replace `latest` with the desired version tag (e.g., `v11.0.0`).
@@ -173,12 +174,12 @@ Follow these steps to build the Docker image.
 
 ### Get the Source
 
-First, clone the Camino Messenger Bot repository and initialize the
+First, clone the Travel Token Messenger Bot repository and initialize the
 submodules:
 
 ```sh
 git clone -b c4t https://github.com/TravelTokenMarketplace/travel-token-messenger-bot.git
-cd camino-messenger-bot
+cd travel-token-messenger-bot
 #checkout certain tag. replace with the tag (eg: v11.0.0)
 git checkout
 git submodule update --init
@@ -189,22 +190,22 @@ git submodule update --init
 Use the following command to build the Docker image:
 
 ```sh
-docker build --tag camino-messenger-bot .
+docker build --tag travel-token-messenger-bot .
 ```
 
 After a successful build, test the image with:
 
 ```sh
-docker run --rm camino-messenger-bot --help
+docker run --rm travel-token-messenger-bot --help
 ```
 
 The expected output should be:
 
 ```
-starts camino messenger bot
+starts travel token messenger bot
 
 Usage:
-  camino-messenger-bot [flags]
+  travel-token-messenger-bot [flags]
 
 Flags:
       --booking_token_address string                BookingToken address. (default "0xe55E387F5474a012D1b048155E25ea78C7DBfBBC")
@@ -253,7 +254,7 @@ the future, but for now, it is provided here for reference.
 
 ## Networking
 
-To enable the bot to connect to the Camino Messenger server, ensure that the network
+To enable the bot to connect to the Travel Token Messenger server, ensure that the network
 infrastructure and firewall rules are properly configured. The host running the bot
 must be able to resolve DNS names and establish a connection with at least the
 configured Matrix server. For internal communication with the Partner Plugin, ensure
@@ -274,7 +275,7 @@ applications to communicate.
 
 ## Known Issues & Limitations
 
-The following known issues should be considered when using the Camino Messenger Bot:
+The following known issues should be considered when using the Travel Token Messenger Bot:
 
 ### v11.0.0
 
@@ -283,12 +284,8 @@ The following known issues should be considered when using the Camino Messenger 
   may increase depending on network conditions, especially if the bot receives
   messages during this initialization period.
 
-- **Cancellation is not yet implemented:** The bot currently does not support
-  cancellation as specified in the `release-11` of the protocol. This functionality
-  will be included in a future release.
-
 - **Camino Messenger Account upgrade:** The CM Account has to be upgraded to the
-  latest version, when upgrading the bot to v11.0.0.
+  latest version, when upgrading the bot to v11.0.0 or later.
 
 - **Listening to events:** The bot is not yet persisting subscriptions to blockchain
   events. This means that if the bot is stopped after a mint operation and started

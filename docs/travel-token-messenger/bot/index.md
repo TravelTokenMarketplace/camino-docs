@@ -14,14 +14,6 @@ change.
 
 :::
 
-:::caution 🚧 ALPHA CODE NOTICE 🚧
-
-This application is in the alpha phase of development. It is important to note
-that during this stage, breaking changes may occur without advance notice.
-Users should proceed with caution.
-
-:::
-
 ## What is Travel Token Messenger Bot?
 
 The Travel Token Messenger Bot (TTMB) is an application that enhances the
