@@ -79,7 +79,7 @@ const config = {
         title: 'TravelTokenMessenger Docs',
         logo: {
           alt: 'TT Messenger Logo',
-          src: 'img/logo.svg',
+          src: 'img/messenger/logo_ttm_edited.avif',
         },
         items: [
           {
