@@ -98,7 +98,7 @@ Just like any API end-point from the web2 era, you can check the availability of
 
 #### Partners
 
-__ToDo: rewrite to the new UI of the TTM account manager__ Partner configuration can be managed via the Travel Token Partner Showroom, which forms part of the Travel Token Application Suite and is the section where partners can discover each other and initiate offline communication about the services they offer and want to obtain. Once the configuration has been set up for both partners as detailed [here](https://docs.Travel Token.network/partners/partner-config), the online communication can be started and happens as described in the following of this page.
+__ToDo: rewrite to the new UI of the TTM account manager__ Partner configuration can be managed via the Travel Token Partner Showroom, which forms part of the Travel Token Application Suite and is the section where partners can discover each other and initiate offline communication about the services they offer and want to obtain. Once the configuration has been set up for both partners as detailed [here](https://new.link), the online communication can be started and happens as described in the following of this page.
 
 #### Onboarding
 
@@ -238,7 +238,7 @@ Together with the use of the serialized protobuf message format, the removal of 
 
 ## Versioning and Releases
 
-The `v1alpha` version first release was done on 18 January 2023. Feedback and reviews with Travel Token Network Partners lead to improvements of Message Types and the release of the first productive version "v1". A partner working with a specific Message Type to implement a connection to their system discovers errors or finds a concept is missing in the Travel Token MessageType. Through our Discord Messenger Protocol channel suggestions can be made and if adopted deployed with a new Message Type release. Conclusively one Message Type can be mature and and have only non-breaking improvements, while another Message Type is actively being developed. While "Accommodation" might be in a productive `v1`, we might have "Car Rental" in a `v2beta`, actively working with one or more partners to establish a productive `v2` for "Car Rental". As all message formats are released together, we simply have numeric releases that contain updates on one or more messages from one or more feature branches and PRs.
+The `v1alpha` version first release was done on 18 January 2023. Feedback and reviews with Camino and Travel Token Network Partners lead to improvements of Message Types and the release of the first productive version "v1". A partner working with a specific Message Type to implement a connection to their system discovers errors or finds a concept is missing in the Travel Token MessageType. Through our Discord Messenger Protocol channel suggestions can be made and if adopted deployed with a new Message Type release. Conclusively one Message Type can be mature and and have only non-breaking improvements, while another Message Type is actively being developed. While "Accommodation" might be in a productive `v1`, we might have "Car Rental" in a `v2beta`, actively working with one or more partners to establish a productive `v2` for "Car Rental". As all message formats are released together, we simply have numeric releases that contain updates on one or more messages from one or more feature branches and PRs.
 
 ### Bot Version
 

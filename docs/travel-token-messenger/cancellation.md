@@ -6,7 +6,7 @@ description: Cancellation Process
 
 # Booking Token Cancellation Process
 
-The Camino Messenger platform implements a flexible cancellation system for booking
+The Travel Token Messenger platform implements a flexible cancellation system for booking
 tokens that accommodates both distributor-initiated and supplier-initiated
 cancellations. The process is designed to allow negotiation between parties while
 maintaining security and clarity throughout the cancellation flow.
@@ -70,6 +70,8 @@ on-chain at all. On-chain registration of the cancellation starts with the
 `InitiateCancellationRequest` and remains on-chain, even if the cancellation is
 rejected.
 
+### Refund amount instead of cancellation cost
+
 It is important to note that in all cases the refund amount must be specified and
 not the cancellation cost. This is because the originally (to be) paid amount for
 the initial booking (for example 1,000€) was already specified in a previous
@@ -94,7 +96,7 @@ calling `FinalizeCancellation`.
 
 ## Cancellation Flow and Messages
 
-A cancellation is initiated via the Camino Messenger. The refund amount should be
+A cancellation is initiated via the Travel Token Messenger. The refund amount should be
 predetermined; if not stored with the booking, it can be requested from the supplier
 using the `CheckCancellationRequest`.
 
@@ -248,6 +250,8 @@ for the finalization, which is always done by the supplier upon the acceptance o
 the cancellation by the distributor.
 
 ## Sequence Diagram of the Cancellation Flow
+
+__ToDo: change the column names to the new account name__
 
 ```mermaid
 sequenceDiagram
@@ -403,7 +407,7 @@ sequenceDiagram
 
 ## Refund Processing
 
-- Refunds can be processed in native currency (CAM) or ERC20 tokens.
+- Refunds can be processed in native chain currency or ERC20 tokens.
 - The supplier must provide the exact refund amount agreed upon.
 - Refund amount is automatically transferred to the distributor upon successful
   finalization of the cancellation.
