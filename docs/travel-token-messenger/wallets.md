@@ -20,7 +20,7 @@ it will show up.
 Rabby Wallet auto-detects chains (no manual RPC config needed for most networks), has notably better
 token balance detection than MetaMask, and shows pre-transaction simulation so you can see exactly what
 a contract call will do before signing. It's built by DeBank, originally aimed at multi-chain DeFi users,
-so token/balance handling was a priority from day one. Good fit given you're juggling EURe and AccountManager
+so token/balance handling was a priority from day one. Good fit given we are juggling EURe and AccountManager
 contract interactions.
 
 ### Coinbase Wallet
