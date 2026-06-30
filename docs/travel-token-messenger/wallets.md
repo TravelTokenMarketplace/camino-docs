@@ -9,7 +9,7 @@ description: How to create a wallet for use with the Travel Token Account and Me
 Wallets need to be created for your TTM Account and for each bot you run. Some wallet suggestions:
 
 ### Metamask
-The obvious choice is to use a Metamask wallet. However there is an annoying bug in matrix_messenger
+The obvious choice is to use a Metamask wallet. However there is an annoying bug in Metamask
 adding tokens on Base Sepolia (testnet), Base mainnet is working fine. After adding a token on MM for
 Base Sepolia, it does not show the token in the "token enable list". Go here: 
 https://base-sepolia.blockscout.com/address/0x.... (your wallet address)
