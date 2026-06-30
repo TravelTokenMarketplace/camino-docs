@@ -20,6 +20,11 @@ The Travel Token Messenger Bot (TTMB) is an application that enhances the
 functionality for distributors and service providers by enabling the seamless
 integration of their existing systems with Travel Token Messenger.
 
+The Travel Token Messenger Bot (TTMB) depends on a Travel Token Messenger Account
+which can be managed **here** and for which the manuals are **here**
+
+There is a developer UI to create and manage accounts.
+
 Source code repository: [https://github.com/TravelTokenMarketplace/camino-messenger-bot](https://github.com/TravelTokenMarketplace/camino-messenger-bot)
 
 **Quick Start:**
